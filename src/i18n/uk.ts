@@ -114,6 +114,14 @@
     </message>
 </context>
 <context>
+    <name>WebLanguage</name>
+    <message>
+        <location filename="../core/web_language.cpp" line="62"/>
+        <source>Auto-detect (system default)</source>
+        <translation>Автовизначення (за замовчуванням у системі)</translation>
+    </message>
+</context>
+<context>
     <name>ktechpit::AppCard</name>
     <message>
         <location filename="../modules/KtechpitApps/AppCard.cpp" line="92"/>
@@ -716,12 +724,12 @@ Everything still works; you can turn hardware acceleration back on in Settings �
         <translation>Номер телефону з кодом країни або посилання wa.me:</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="500"/>
+        <location filename="../ui/main_window.cpp" line="502"/>
         <source>Screen lock</source>
         <translation>Блокування екрана</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="500"/>
+        <location filename="../ui/main_window.cpp" line="502"/>
         <source>Set a passcode first to use the lock.
 
 Open Settings now?</source>
@@ -730,17 +738,17 @@ Open Settings now?</source>
 Відкрити налаштування зараз?</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="592"/>
+        <location filename="../ui/main_window.cpp" line="594"/>
         <source>Incorrect passcode.</source>
         <translation>Неправильний код доступу.</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="670"/>
+        <location filename="../ui/main_window.cpp" line="672"/>
         <source>WhatsApp Web keeps crashing</source>
         <translation>WhatsApp Web постійно аварійно завершується</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="671"/>
+        <location filename="../ui/main_window.cpp" line="673"/>
         <source>The page&apos;s render process has crashed several times in a row.
 
 Reload to try again, or quit. If this keeps happening, use Settings → Privacy &amp; Advanced to find the log.</source>
@@ -749,12 +757,12 @@ Reload to try again, or quit. If this keeps happening, use Settings → Privacy 
 Перезавантажте, щоб спробувати ще раз, або вийдіть. Якщо це повторюється, знайдіть журнал у розділі «Налаштування → Конфіденційність і додаткові».</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="693"/>
+        <location filename="../ui/main_window.cpp" line="695"/>
         <source>Log out and clear session?</source>
         <translation>Вийти та очистити сеанс?</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="694"/>
+        <location filename="../ui/main_window.cpp" line="696"/>
         <source>This removes the WhatsApp session and all cached data from this computer. Whatsie will quit; when you start it again you link your phone with the QR code.
 
 Your downloaded files are kept.</source>
@@ -763,12 +771,12 @@ Your downloaded files are kept.</source>
 Завантажені файли буде збережено.</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="707"/>
+        <location filename="../ui/main_window.cpp" line="709"/>
         <source>Cannot clear session</source>
         <translation>Не вдається очистити сеанс</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="707"/>
+        <location filename="../ui/main_window.cpp" line="709"/>
         <source>Could not write %1.</source>
         <translation>Не вдалося записати %1.</translation>
     </message>
@@ -893,44 +901,44 @@ Your downloaded files are kept.</source>
 <context>
     <name>whatsie::ui::SettingsDialog</name>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="72"/>
-        <location filename="../ui/settings_dialog.cpp" line="90"/>
+        <location filename="../ui/settings_dialog.cpp" line="73"/>
+        <location filename="../ui/settings_dialog.cpp" line="91"/>
         <source>Settings</source>
         <translation>Налаштування</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="76"/>
+        <location filename="../ui/settings_dialog.cpp" line="77"/>
         <source>General</source>
         <translation>Загальні</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="77"/>
+        <location filename="../ui/settings_dialog.cpp" line="78"/>
         <source>Appearance</source>
         <translation>Вигляд</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="78"/>
+        <location filename="../ui/settings_dialog.cpp" line="79"/>
         <source>Notifications</source>
         <translation>Сповіщення</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="79"/>
+        <location filename="../ui/settings_dialog.cpp" line="80"/>
         <source>Privacy</source>
         <translation>Конфіденційність</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="80"/>
-        <location filename="../ui/settings_dialog.cpp" line="547"/>
+        <location filename="../ui/settings_dialog.cpp" line="81"/>
+        <location filename="../ui/settings_dialog.cpp" line="610"/>
         <source>Advanced</source>
         <translation>Додатково</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="154"/>
+        <location filename="../ui/settings_dialog.cpp" line="155"/>
         <source>Restore defaults</source>
         <translation>Відновити типові</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="155"/>
+        <location filename="../ui/settings_dialog.cpp" line="156"/>
         <source>Reset all settings to their defaults?
 
 Your lock passcode is kept. Some changes take effect after you restart Whatsie.</source>
@@ -939,527 +947,552 @@ Your lock passcode is kept. Some changes take effect after you restart Whatsie.<
 Код доступу блокування буде збережено. Деякі зміни набудуть чинності після перезапуску Whatsie.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="210"/>
+        <location filename="../ui/settings_dialog.cpp" line="211"/>
         <source>Language</source>
         <translation>Мова</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="213"/>
+        <location filename="../ui/settings_dialog.cpp" line="214"/>
         <source>Automatic (system)</source>
         <translation>Автоматично (як у системі)</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="231"/>
+        <location filename="../ui/settings_dialog.cpp" line="232"/>
         <source>Interface language:</source>
         <translation>Мова інтерфейсу:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="232"/>
+        <location filename="../ui/settings_dialog.cpp" line="233"/>
         <source>Applies after restarting Whatsie.</source>
         <translation>Застосовується після перезапуску Whatsie.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="238"/>
+        <location filename="../ui/settings_dialog.cpp" line="239"/>
+        <source>WhatsApp Web language</source>
+        <translation>Мова WhatsApp Web</translation>
+    </message>
+    <message>
+        <location filename="../ui/settings_dialog.cpp" line="243"/>
+        <source>Choose the language header sent to WhatsApp Web (determines chat and menu language):</source>
+        <translation>Виберіть мовний заголовок, що надсилається до WhatsApp Web (визначає мову чатів та меню):</translation>
+    </message>
+    <message>
+        <location filename="../ui/settings_dialog.cpp" line="249"/>
+        <source>Search languages…</source>
+        <translation>Пошук мов…</translation>
+    </message>
+    <message>
+        <location filename="../ui/settings_dialog.cpp" line="290"/>
+        <source>Takes effect after reloading WhatsApp Web.</source>
+        <translation>Набуває чинності після перезавантаження WhatsApp Web.</translation>
+    </message>
+    <message>
+        <location filename="../ui/settings_dialog.cpp" line="293"/>
+        <source>Reload page now</source>
+        <translation>Перезавантажити сторінку зараз</translation>
+    </message>
+    <message>
+        <location filename="../ui/settings_dialog.cpp" line="301"/>
         <source>Window</source>
         <translation>Вікно</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="241"/>
+        <location filename="../ui/settings_dialog.cpp" line="304"/>
         <source>Minimize to tray</source>
         <translation>Згорнути в трей</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="242"/>
+        <location filename="../ui/settings_dialog.cpp" line="305"/>
         <source>Quit</source>
         <translation>Вийти</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="246"/>
+        <location filename="../ui/settings_dialog.cpp" line="309"/>
         <source>When closing the window:</source>
         <translation>Під час закриття вікна:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="247"/>
+        <location filename="../ui/settings_dialog.cpp" line="310"/>
         <source>Start hidden in the system tray</source>
         <translation>Запускати прихованим у системному треї</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="251"/>
+        <location filename="../ui/settings_dialog.cpp" line="314"/>
         <source>Left-clicking the tray icon shows/hides the window</source>
         <translation>Клацання лівою кнопкою на значку в треї показує/ховає вікно</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="255"/>
+        <location filename="../ui/settings_dialog.cpp" line="318"/>
         <source>Start Whatsie automatically when I log in</source>
         <translation>Автоматично запускати Whatsie під час входу в систему</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="260"/>
+        <location filename="../ui/settings_dialog.cpp" line="323"/>
         <source>No system tray was detected: the window will never be hidden.</source>
         <translation>Системний трей не виявлено: вікно ніколи не буде приховано.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="272"/>
+        <location filename="../ui/settings_dialog.cpp" line="335"/>
         <source>System tray</source>
         <translation>Системний трей</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="274"/>
+        <location filename="../ui/settings_dialog.cpp" line="337"/>
         <source>Use a monochrome (symbolic) icon</source>
         <translation>Використовувати монохромний (символьний) значок</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="278"/>
+        <location filename="../ui/settings_dialog.cpp" line="341"/>
         <source>Hide the tray icon</source>
         <translation>Сховати значок у треї</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="281"/>
+        <location filename="../ui/settings_dialog.cpp" line="344"/>
         <source>Dim the icon while disconnected</source>
         <translation>Затемнювати значок, коли немає з&apos;єднання</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="287"/>
+        <location filename="../ui/settings_dialog.cpp" line="350"/>
         <source>Downloads</source>
         <translation>Завантаження</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="291"/>
+        <location filename="../ui/settings_dialog.cpp" line="354"/>
         <source>Change…</source>
         <translation>Змінити…</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="294"/>
+        <location filename="../ui/settings_dialog.cpp" line="357"/>
         <source>Download folder</source>
         <translation>Тека завантажень</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="303"/>
+        <location filename="../ui/settings_dialog.cpp" line="366"/>
         <source>Save files to:</source>
         <translation>Зберігати файли в:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="304"/>
+        <location filename="../ui/settings_dialog.cpp" line="367"/>
         <source>Always ask where to save</source>
         <translation>Завжди питати, куди зберегти</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="308"/>
+        <location filename="../ui/settings_dialog.cpp" line="371"/>
         <source>Show the Downloads window when a download starts</source>
         <translation>Показувати вікно завантажень, коли починається завантаження</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="323"/>
+        <location filename="../ui/settings_dialog.cpp" line="386"/>
         <source>Follow system</source>
         <translation>Як у системі</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="324"/>
-        <location filename="../ui/settings_dialog.cpp" line="367"/>
+        <location filename="../ui/settings_dialog.cpp" line="387"/>
+        <location filename="../ui/settings_dialog.cpp" line="430"/>
         <source>Light</source>
         <translation>Світла</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="325"/>
+        <location filename="../ui/settings_dialog.cpp" line="388"/>
         <source>Dark</source>
         <translation>Темна</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="328"/>
+        <location filename="../ui/settings_dialog.cpp" line="391"/>
         <source>Theme:</source>
         <translation>Тема:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="341"/>
+        <location filename="../ui/settings_dialog.cpp" line="404"/>
         <source>Zoom (normal window):</source>
         <translation>Масштаб (звичайне вікно):</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="348"/>
+        <location filename="../ui/settings_dialog.cpp" line="411"/>
         <source>Zoom (maximized / full screen):</source>
         <translation>Масштаб (розгорнуте / повний екран):</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="350"/>
+        <location filename="../ui/settings_dialog.cpp" line="413"/>
         <source>Smooth scrolling</source>
         <translation>Плавне прокручування</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="360"/>
+        <location filename="../ui/settings_dialog.cpp" line="423"/>
         <source>Scales the whole interface. Applies after restarting Whatsie.</source>
         <translation>Масштабує весь інтерфейс. Застосовується після перезапуску Whatsie.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="363"/>
+        <location filename="../ui/settings_dialog.cpp" line="426"/>
         <source>Interface scale:</source>
         <translation>Масштаб інтерфейсу:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="366"/>
-        <location filename="../ui/settings_dialog.cpp" line="554"/>
+        <location filename="../ui/settings_dialog.cpp" line="429"/>
+        <location filename="../ui/settings_dialog.cpp" line="617"/>
         <source>Off</source>
         <translation>Вимк.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="368"/>
+        <location filename="../ui/settings_dialog.cpp" line="431"/>
         <source>Medium</source>
         <translation>Середнє</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="369"/>
+        <location filename="../ui/settings_dialog.cpp" line="432"/>
         <source>Strong</source>
         <translation>Сильне</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="374"/>
+        <location filename="../ui/settings_dialog.cpp" line="437"/>
         <source>Blur messages until hover:</source>
         <translation>Розмивати повідомлення до наведення:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="383"/>
+        <location filename="../ui/settings_dialog.cpp" line="446"/>
         <source>Show message notifications</source>
         <translation>Показувати сповіщення про повідомлення</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="388"/>
+        <location filename="../ui/settings_dialog.cpp" line="451"/>
         <source>Play the desktop&apos;s message sound</source>
         <translation>Відтворювати системний звук повідомлення</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="395"/>
+        <location filename="../ui/settings_dialog.cpp" line="458"/>
         <source>Desktop default</source>
         <translation>Типово для системи</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="396"/>
+        <location filename="../ui/settings_dialog.cpp" line="459"/>
         <source> s</source>
         <translation> с</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="399"/>
+        <location filename="../ui/settings_dialog.cpp" line="462"/>
         <source>Hide after:</source>
         <translation>Ховати через:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="401"/>
+        <location filename="../ui/settings_dialog.cpp" line="464"/>
         <source>Send test notification</source>
         <translation>Надіслати тестове сповіщення</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="405"/>
+        <location filename="../ui/settings_dialog.cpp" line="468"/>
         <source>Temporary Do-not-disturb is in the tray icon menu.</source>
         <translation>Тимчасовий режим «Не турбувати» доступний у меню значка в треї.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="420"/>
+        <location filename="../ui/settings_dialog.cpp" line="483"/>
         <source>What WhatsApp may use</source>
         <translation>Що може використовувати WhatsApp</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="422"/>
+        <location filename="../ui/settings_dialog.cpp" line="485"/>
         <source>Camera and microphone are on by default so calls work without a prompt. Turn anything off here.</source>
         <translation>Камера та мікрофон увімкнені типово, щоб дзвінки працювали без запиту. Тут можна вимкнути будь-що.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="441"/>
+        <location filename="../ui/settings_dialog.cpp" line="504"/>
         <source>Storage</source>
         <translation>Сховище</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="443"/>
-        <location filename="../ui/settings_dialog.cpp" line="444"/>
+        <location filename="../ui/settings_dialog.cpp" line="506"/>
+        <location filename="../ui/settings_dialog.cpp" line="507"/>
         <source>calculating…</source>
         <translation>обчислення…</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="445"/>
+        <location filename="../ui/settings_dialog.cpp" line="508"/>
         <source>Cache:</source>
         <translation>Кеш:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="446"/>
+        <location filename="../ui/settings_dialog.cpp" line="509"/>
         <source>Session data:</source>
         <translation>Дані сеансу:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="447"/>
+        <location filename="../ui/settings_dialog.cpp" line="510"/>
         <source>Clear cache</source>
         <translation>Очистити кеш</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="448"/>
+        <location filename="../ui/settings_dialog.cpp" line="511"/>
         <source>Removes cached web content. You stay logged in.</source>
         <translation>Видаляє кешований вебвміст. Ви залишитеся в обліковому записі.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="453"/>
+        <location filename="../ui/settings_dialog.cpp" line="516"/>
         <source>Log out &amp;&amp; clear session…</source>
         <translation>Вийти &amp;&amp; очистити сеанс…</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="455"/>
+        <location filename="../ui/settings_dialog.cpp" line="518"/>
         <source>Removes the WhatsApp session. Whatsie quits and you link your phone again.</source>
         <translation>Видаляє сеанс WhatsApp. Whatsie закриється, і вам потрібно буде знову під&apos;єднати телефон.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="464"/>
+        <location filename="../ui/settings_dialog.cpp" line="527"/>
         <source>Spell check</source>
         <translation>Перевірка правопису</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="466"/>
+        <location filename="../ui/settings_dialog.cpp" line="529"/>
         <source>Check spelling as I type</source>
         <translation>Перевіряти правопис під час введення</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="478"/>
+        <location filename="../ui/settings_dialog.cpp" line="541"/>
         <source>No dictionaries are bundled, so spell check is inactive.</source>
         <translation>Словники не входять до комплекту, тому перевірка правопису неактивна.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="485"/>
+        <location filename="../ui/settings_dialog.cpp" line="548"/>
         <source>Languages (check every one to spell-check against):</source>
         <translation>Мови (позначте всі, за якими потрібно перевіряти правопис):</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="500"/>
+        <location filename="../ui/settings_dialog.cpp" line="563"/>
         <source>%1 (%2) — %3</source>
         <translation>%1 (%2) — %3</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="528"/>
+        <location filename="../ui/settings_dialog.cpp" line="591"/>
         <source>Missing a language? Drop its .bdic dictionary file into the dictionaries folder, then reopen this dialog.</source>
         <translation>Бракує мови? Покладіть її файл словника .bdic у теку словників і знову відкрийте це вікно.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="533"/>
+        <location filename="../ui/settings_dialog.cpp" line="596"/>
         <source>Open folder…</source>
         <translation>Відкрити теку…</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="551"/>
-        <location filename="../ui/settings_dialog.cpp" line="563"/>
+        <location filename="../ui/settings_dialog.cpp" line="614"/>
+        <location filename="../ui/settings_dialog.cpp" line="626"/>
         <source>Automatic</source>
         <translation>Автоматично</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="552"/>
+        <location filename="../ui/settings_dialog.cpp" line="615"/>
         <source>Always on (ignore GPU blocklist)</source>
         <translation>Завжди ввімкнено (ігнорувати чорний список GPU)</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="559"/>
+        <location filename="../ui/settings_dialog.cpp" line="622"/>
         <source>Hardware acceleration:</source>
         <translation>Апаратне прискорення:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="564"/>
+        <location filename="../ui/settings_dialog.cpp" line="627"/>
         <source> MB</source>
         <translation> МБ</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="565"/>
+        <location filename="../ui/settings_dialog.cpp" line="628"/>
         <source>Cap WhatsApp Web&apos;s JavaScript memory so a long session cannot grow without bound. 0 = automatic; lower it if the app uses too much RAM.</source>
         <translation>Обмежує пам&apos;ять JavaScript у WhatsApp Web, щоб тривалий сеанс не розростався безмежно. 0 = автоматично; зменште, якщо застосунок споживає забагато оперативної пам&apos;яті.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="570"/>
+        <location filename="../ui/settings_dialog.cpp" line="633"/>
         <source>JavaScript memory limit:</source>
         <translation>Обмеження пам&apos;яті JavaScript:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="571"/>
+        <location filename="../ui/settings_dialog.cpp" line="634"/>
         <source>Route WebRTC through public interfaces only</source>
         <translation>Спрямовувати WebRTC лише через публічні інтерфейси</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="572"/>
+        <location filename="../ui/settings_dialog.cpp" line="635"/>
         <source>Hides local network addresses from calls. May break calls on some networks. Takes effect after a reload.</source>
         <translation>Приховує адреси локальної мережі під час дзвінків. У деяких мережах дзвінки можуть перестати працювати. Набуває чинності після перезавантаження.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="587"/>
+        <location filename="../ui/settings_dialog.cpp" line="650"/>
         <source>Takes effect after restarting Whatsie. Turn off if the window stays blank.</source>
         <translation>Набуває чинності після перезапуску Whatsie. Вимкніть, якщо вікно залишається порожнім.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="594"/>
+        <location filename="../ui/settings_dialog.cpp" line="657"/>
         <source>Log file: %1</source>
         <translation>Файл журналу: %1</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="594"/>
+        <location filename="../ui/settings_dialog.cpp" line="657"/>
         <source>disabled (--no-log-file)</source>
         <translation>вимкнено (--no-log-file)</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="598"/>
+        <location filename="../ui/settings_dialog.cpp" line="661"/>
         <source>Open log folder</source>
         <translation>Відкрити теку журналу</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="610"/>
+        <location filename="../ui/settings_dialog.cpp" line="673"/>
         <source>Screen lock</source>
         <translation>Блокування екрана</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="626"/>
+        <location filename="../ui/settings_dialog.cpp" line="689"/>
         <source>Remove…</source>
         <translation>Видалити…</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="630"/>
-        <location filename="../ui/settings_dialog.cpp" line="636"/>
+        <location filename="../ui/settings_dialog.cpp" line="693"/>
+        <location filename="../ui/settings_dialog.cpp" line="699"/>
         <source>Remove passcode</source>
         <translation>Видалити код доступу</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="630"/>
+        <location filename="../ui/settings_dialog.cpp" line="693"/>
         <source>Enter the current passcode:</source>
         <translation>Введіть поточний код доступу:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="636"/>
+        <location filename="../ui/settings_dialog.cpp" line="699"/>
         <source>That passcode is incorrect.</source>
         <translation>Цей код доступу неправильний.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="648"/>
+        <location filename="../ui/settings_dialog.cpp" line="711"/>
         <source>Lock on startup</source>
         <translation>Блокувати під час запуску</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="651"/>
+        <location filename="../ui/settings_dialog.cpp" line="714"/>
         <source>Lock when minimized to the tray</source>
         <translation>Блокувати під час згортання в трей</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="656"/>
+        <location filename="../ui/settings_dialog.cpp" line="719"/>
         <source>Never</source>
         <translation>Ніколи</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="657"/>
+        <location filename="../ui/settings_dialog.cpp" line="720"/>
         <source> min</source>
         <translation> хв</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="659"/>
+        <location filename="../ui/settings_dialog.cpp" line="722"/>
         <source>Lock after idle:</source>
         <translation>Блокувати після бездіяльності:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="660"/>
+        <location filename="../ui/settings_dialog.cpp" line="723"/>
         <source>Show other Ktechpit apps on the lock screen</source>
         <translation>Показувати інші застосунки Ktechpit на екрані блокування</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="672"/>
+        <location filename="../ui/settings_dialog.cpp" line="735"/>
         <source>A passcode is set. The app can be locked below.</source>
         <translation>Код доступу встановлено. Застосунок можна заблокувати нижче.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="673"/>
+        <location filename="../ui/settings_dialog.cpp" line="736"/>
         <source>No passcode set. Set one to enable locking.</source>
         <translation>Код доступу не встановлено. Встановіть його, щоб увімкнути блокування.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="674"/>
+        <location filename="../ui/settings_dialog.cpp" line="737"/>
         <source>Change passcode…</source>
         <translation>Змінити код доступу…</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="674"/>
+        <location filename="../ui/settings_dialog.cpp" line="737"/>
         <source>Set passcode…</source>
         <translation>Встановити код доступу…</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="683"/>
+        <location filename="../ui/settings_dialog.cpp" line="746"/>
         <source>Network proxy</source>
         <translation>Мережевий проксі</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="688"/>
+        <location filename="../ui/settings_dialog.cpp" line="751"/>
         <source>Use system settings</source>
         <translation>Використовувати системні налаштування</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="689"/>
+        <location filename="../ui/settings_dialog.cpp" line="752"/>
         <source>No proxy (direct)</source>
         <translation>Без проксі (напряму)</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="690"/>
+        <location filename="../ui/settings_dialog.cpp" line="753"/>
         <source>Manual</source>
         <translation>Вручну</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="695"/>
+        <location filename="../ui/settings_dialog.cpp" line="758"/>
         <source>Proxy:</source>
         <translation>Проксі:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="698"/>
+        <location filename="../ui/settings_dialog.cpp" line="761"/>
         <source>HTTP</source>
         <translation>HTTP</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="699"/>
+        <location filename="../ui/settings_dialog.cpp" line="762"/>
         <source>SOCKS5</source>
         <translation>SOCKS5</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="703"/>
+        <location filename="../ui/settings_dialog.cpp" line="766"/>
         <source>Type:</source>
         <translation>Тип:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="707"/>
+        <location filename="../ui/settings_dialog.cpp" line="770"/>
         <source>host or IP</source>
         <translation>хост або IP</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="714"/>
+        <location filename="../ui/settings_dialog.cpp" line="777"/>
         <source>Port:</source>
         <translation>Порт:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="716"/>
+        <location filename="../ui/settings_dialog.cpp" line="779"/>
         <source>Server:</source>
         <translation>Сервер:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="719"/>
+        <location filename="../ui/settings_dialog.cpp" line="782"/>
         <source>optional</source>
         <translation>необов&apos;язково</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="722"/>
+        <location filename="../ui/settings_dialog.cpp" line="785"/>
         <source>Username:</source>
         <translation>Ім&apos;я користувача:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="726"/>
+        <location filename="../ui/settings_dialog.cpp" line="789"/>
         <source>kept for this session only</source>
         <translation>зберігається лише для цього сеансу</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="729"/>
+        <location filename="../ui/settings_dialog.cpp" line="792"/>
         <source>Password:</source>
         <translation>Пароль:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="732"/>
+        <location filename="../ui/settings_dialog.cpp" line="795"/>
         <source>Reload WhatsApp (F5) for proxy changes to take effect. The password is never saved to disk.</source>
         <translation>Перезавантажте WhatsApp (F5), щоб зміни проксі набули чинності. Пароль ніколи не зберігається на диск.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="577"/>
+        <location filename="../ui/settings_dialog.cpp" line="640"/>
         <source>Render at the display&apos;s refresh rate</source>
         <translation>Відмальовувати з частотою оновлення дисплея</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="578"/>
+        <location filename="../ui/settings_dialog.cpp" line="641"/>
         <source>Removes Chromium&apos;s 60 FPS cap so scrolling and animations run at your monitor&apos;s refresh rate. Uses more GPU and CPU. Takes effect after restarting Whatsie.</source>
         <translation>Знімає обмеження Chromium у 60 кадрів/с, щоб прокручування й анімації відповідали частоті оновлення вашого монітора. Споживає більше ресурсів GPU та CPU. Набуває чинності після перезапуску Whatsie.</translation>
     </message>

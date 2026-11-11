@@ -160,6 +160,11 @@ public:
     [[nodiscard]] QString interfaceLanguage() const;
     void setInterfaceLanguage(const QString& locale);
 
+    /// WhatsApp Web language header preference (e.g. "pl_PL", "en_US"); empty
+    /// indicates auto-detect (system default, no forced header override).
+    [[nodiscard]] QString webLanguage() const;
+    void setWebLanguage(const QString& code);
+
     // advanced/
     [[nodiscard]] HardwareAcceleration hardwareAcceleration() const;
     void setHardwareAcceleration(HardwareAcceleration mode);
@@ -248,6 +253,7 @@ Q_SIGNALS:
     void lockConfigChanged();
     void spellCheckEnabledChanged(bool enabled);
     void spellCheckLanguagesChanged(const QStringList& languages);
+    void webLanguageChanged(const QString& code);
     void themeChanged(whatsie::core::Theme theme);
     void notificationsEnabledChanged(bool enabled);
     void notificationSoundChanged(bool enabled);

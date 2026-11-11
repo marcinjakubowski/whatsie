@@ -647,6 +647,21 @@ void Settings::setInterfaceLanguage(const QString& locale)
     m_store->sync(); // flush now so the choice survives even an unclean exit (#171)
 }
 
+QString Settings::webLanguage() const
+{
+    return m_store->value(keys::kWebLanguage).toString();
+}
+
+void Settings::setWebLanguage(const QString& code)
+{
+    if (webLanguage() == code) {
+        return;
+    }
+    m_store->setValue(keys::kWebLanguage, code);
+    m_store->sync();
+    Q_EMIT webLanguageChanged(code);
+}
+
 // ---- lock/ (FEATURES P1) ---------------------------------------------------
 
 bool Settings::hasPasscode() const

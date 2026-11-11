@@ -3,6 +3,7 @@
 #include "core/settings/settings.h"
 #include "core/spellcheck.h"
 #include "core/theme/theme_service.h"
+#include "core/web_language.h"
 #include "web/bridge.h"
 #include "web/logging.h"
 #include "web/proxy.h"
@@ -10,7 +11,10 @@
 #include "web/user_agent.h"
 
 #include <QDir>
+#include <QJsonArray>
+#include <QNetworkCookie>
 #include <QStandardPaths>
+#include <QWebEngineCookieStore>
 #include <QWebEnginePermission>
 #include <QWebEngineSettings>
 #include <QtEnvironmentVariables>
@@ -33,11 +37,16 @@ WebProfile::WebProfile(core::Settings& settings, core::ThemeService& theme, QObj
     configureStorage();
     configureUserAgent();
     configureAttributes();
+    configureAcceptLanguage();
     installBootstrap();
     configureSpellCheck();
 
     connect(&m_settings, &core::Settings::smoothScrollingChanged, this, [this](bool enabled) {
         this->settings()->setAttribute(QWebEngineSettings::ScrollAnimatorEnabled, enabled);
+    });
+    connect(&m_settings, &core::Settings::webLanguageChanged, this, [this](const QString&) {
+        configureAcceptLanguage();
+        installBootstrap();
     });
     // Rebake the config so newly loaded pages start at the current blur level;
     // WebView applies it live to the already-loaded page.
@@ -159,16 +168,66 @@ void WebProfile::configureSpellCheck()
                   << m_settings.spellCheckLanguages() << "effective" << effective;
 }
 
+void WebProfile::configureAcceptLanguage()
+{
+    const QString code = m_settings.webLanguage().trimmed();
+    const QString header = core::acceptLanguageHeader(code);
+    setHttpAcceptLanguage(header);
+    qCInfo(lcWeb) << "HTTP Accept-Language:" << (header.isEmpty() ? u"<default system>"_s : header);
+
+    auto* store = cookieStore();
+    if (store == nullptr) {
+        return;
+    }
+
+    const QUrl whatsappUrl(u"https://web.whatsapp.com"_s);
+    if (!code.isEmpty()) {
+        const QString langCode = code.section(u'_', 0, 0).toLower();
+
+        QNetworkCookie c1(QByteArrayLiteral("wa_lang_pref"), langCode.toUtf8());
+        c1.setDomain(u".whatsapp.com"_s);
+        c1.setPath(u"/"_s);
+        c1.setSecure(true);
+        store->setCookie(c1, whatsappUrl);
+
+        QNetworkCookie c2(QByteArrayLiteral("wa_web_lang_pref"), code.toUtf8());
+        c2.setDomain(u".web.whatsapp.com"_s);
+        c2.setPath(u"/"_s);
+        c2.setSecure(true);
+        store->setCookie(c2, whatsappUrl);
+    } else {
+        QNetworkCookie c1(QByteArrayLiteral("wa_lang_pref"), QByteArray());
+        c1.setDomain(u".whatsapp.com"_s);
+        c1.setPath(u"/"_s);
+        store->deleteCookie(c1, whatsappUrl);
+
+        QNetworkCookie c2(QByteArrayLiteral("wa_web_lang_pref"), QByteArray());
+        c2.setDomain(u".web.whatsapp.com"_s);
+        c2.setPath(u"/"_s);
+        store->deleteCookie(c2, whatsappUrl);
+    }
+}
+
 void WebProfile::installBootstrap()
 {
     // Config passed to injected scripts as window.__whatsie.config. theme-control.js
     // forces an explicit colorScheme at the page level; "system" lets WhatsApp
     // follow the OS prefers-color-scheme (ADR-020, revised by ADR-026).
-    m_scripts->installBootstrap(QJsonObject{
+    const QString webLang = m_settings.webLanguage().trimmed();
+    QJsonObject config{
         {u"blurLevel"_s, m_settings.messageBlurLevel()},
         {u"colorScheme"_s, themeName(m_settings.theme())},
         {u"effectiveTheme"_s, m_theme.isDark() ? u"dark"_s : u"light"_s},
-    });
+        {u"webLanguage"_s, webLang},
+    };
+    if (!webLang.isEmpty()) {
+        QJsonArray langsArray;
+        for (const QString& lang : core::webClientLanguages(webLang)) {
+            langsArray.append(lang);
+        }
+        config[u"webLanguages"_s] = langsArray;
+    }
+    m_scripts->installBootstrap(config);
 }
 
 } // namespace whatsie::web

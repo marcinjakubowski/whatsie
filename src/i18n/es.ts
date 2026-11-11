@@ -114,6 +114,14 @@
     </message>
 </context>
 <context>
+    <name>WebLanguage</name>
+    <message>
+        <location filename="../core/web_language.cpp" line="62"/>
+        <source>Auto-detect (system default)</source>
+        <translation>Detección automática (predeterminado del sistema)</translation>
+    </message>
+</context>
+<context>
     <name>ktechpit::AppCard</name>
     <message>
         <location filename="../modules/KtechpitApps/AppCard.cpp" line="92"/>
@@ -711,12 +719,12 @@ Todo sigue funcionando; puedes volver a activar la aceleración por hardware en 
         <translation>Número de teléfono con código de país, o un enlace wa.me:</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="500"/>
+        <location filename="../ui/main_window.cpp" line="502"/>
         <source>Screen lock</source>
         <translation>Bloqueo de pantalla</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="500"/>
+        <location filename="../ui/main_window.cpp" line="502"/>
         <source>Set a passcode first to use the lock.
 
 Open Settings now?</source>
@@ -725,17 +733,17 @@ Open Settings now?</source>
 ¿Abrir los ajustes ahora?</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="592"/>
+        <location filename="../ui/main_window.cpp" line="594"/>
         <source>Incorrect passcode.</source>
         <translation>Código incorrecto.</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="670"/>
+        <location filename="../ui/main_window.cpp" line="672"/>
         <source>WhatsApp Web keeps crashing</source>
         <translation>WhatsApp Web sigue fallando</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="671"/>
+        <location filename="../ui/main_window.cpp" line="673"/>
         <source>The page&apos;s render process has crashed several times in a row.
 
 Reload to try again, or quit. If this keeps happening, use Settings → Privacy &amp; Advanced to find the log.</source>
@@ -744,12 +752,12 @@ Reload to try again, or quit. If this keeps happening, use Settings → Privacy 
 Recarga para reintentarlo, o cierra la aplicación. Si sigue ocurriendo, usa Ajustes → Privacidad y avanzado para encontrar el registro.</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="693"/>
+        <location filename="../ui/main_window.cpp" line="695"/>
         <source>Log out and clear session?</source>
         <translation>¿Cerrar sesión y borrar los datos?</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="694"/>
+        <location filename="../ui/main_window.cpp" line="696"/>
         <source>This removes the WhatsApp session and all cached data from this computer. Whatsie will quit; when you start it again you link your phone with the QR code.
 
 Your downloaded files are kept.</source>
@@ -758,12 +766,12 @@ Your downloaded files are kept.</source>
 Los archivos descargados se conservan.</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="707"/>
+        <location filename="../ui/main_window.cpp" line="709"/>
         <source>Cannot clear session</source>
         <translation>No se pueden borrar los datos</translation>
     </message>
     <message>
-        <location filename="../ui/main_window.cpp" line="707"/>
+        <location filename="../ui/main_window.cpp" line="709"/>
         <source>Could not write %1.</source>
         <translation>No se pudo escribir %1.</translation>
     </message>
@@ -887,44 +895,44 @@ Los archivos descargados se conservan.</translation>
 <context>
     <name>whatsie::ui::SettingsDialog</name>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="72"/>
-        <location filename="../ui/settings_dialog.cpp" line="90"/>
+        <location filename="../ui/settings_dialog.cpp" line="73"/>
+        <location filename="../ui/settings_dialog.cpp" line="91"/>
         <source>Settings</source>
         <translation>Ajustes</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="76"/>
+        <location filename="../ui/settings_dialog.cpp" line="77"/>
         <source>General</source>
         <translation>General</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="77"/>
+        <location filename="../ui/settings_dialog.cpp" line="78"/>
         <source>Appearance</source>
         <translation>Apariencia</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="78"/>
+        <location filename="../ui/settings_dialog.cpp" line="79"/>
         <source>Notifications</source>
         <translation>Notificaciones</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="79"/>
+        <location filename="../ui/settings_dialog.cpp" line="80"/>
         <source>Privacy</source>
         <translation>Privacidad</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="80"/>
-        <location filename="../ui/settings_dialog.cpp" line="547"/>
+        <location filename="../ui/settings_dialog.cpp" line="81"/>
+        <location filename="../ui/settings_dialog.cpp" line="610"/>
         <source>Advanced</source>
         <translation>Avanzado</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="154"/>
+        <location filename="../ui/settings_dialog.cpp" line="155"/>
         <source>Restore defaults</source>
         <translation>Restaurar valores predeterminados</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="155"/>
+        <location filename="../ui/settings_dialog.cpp" line="156"/>
         <source>Reset all settings to their defaults?
 
 Your lock passcode is kept. Some changes take effect after you restart Whatsie.</source>
@@ -933,527 +941,552 @@ Your lock passcode is kept. Some changes take effect after you restart Whatsie.<
 Se conserva tu código de bloqueo. Algunos cambios se aplican tras reiniciar Whatsie.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="210"/>
+        <location filename="../ui/settings_dialog.cpp" line="211"/>
         <source>Language</source>
         <translation>Idioma</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="213"/>
+        <location filename="../ui/settings_dialog.cpp" line="214"/>
         <source>Automatic (system)</source>
         <translation>Automático (sistema)</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="231"/>
+        <location filename="../ui/settings_dialog.cpp" line="232"/>
         <source>Interface language:</source>
         <translation>Idioma de la interfaz:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="232"/>
+        <location filename="../ui/settings_dialog.cpp" line="233"/>
         <source>Applies after restarting Whatsie.</source>
         <translation>Se aplica tras reiniciar Whatsie.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="238"/>
+        <location filename="../ui/settings_dialog.cpp" line="239"/>
+        <source>WhatsApp Web language</source>
+        <translation>Idioma de WhatsApp Web</translation>
+    </message>
+    <message>
+        <location filename="../ui/settings_dialog.cpp" line="243"/>
+        <source>Choose the language header sent to WhatsApp Web (determines chat and menu language):</source>
+        <translation>Elija el encabezado de idioma enviado a WhatsApp Web (determina el idioma del chat y del menú):</translation>
+    </message>
+    <message>
+        <location filename="../ui/settings_dialog.cpp" line="249"/>
+        <source>Search languages…</source>
+        <translation>Buscar idiomas…</translation>
+    </message>
+    <message>
+        <location filename="../ui/settings_dialog.cpp" line="290"/>
+        <source>Takes effect after reloading WhatsApp Web.</source>
+        <translation>Surte efecto tras recargar WhatsApp Web.</translation>
+    </message>
+    <message>
+        <location filename="../ui/settings_dialog.cpp" line="293"/>
+        <source>Reload page now</source>
+        <translation>Recargar página ahora</translation>
+    </message>
+    <message>
+        <location filename="../ui/settings_dialog.cpp" line="301"/>
         <source>Window</source>
         <translation>Ventana</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="241"/>
+        <location filename="../ui/settings_dialog.cpp" line="304"/>
         <source>Minimize to tray</source>
         <translation>Minimizar a la bandeja</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="242"/>
+        <location filename="../ui/settings_dialog.cpp" line="305"/>
         <source>Quit</source>
         <translation>Salir</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="246"/>
+        <location filename="../ui/settings_dialog.cpp" line="309"/>
         <source>When closing the window:</source>
         <translation>Al cerrar la ventana:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="247"/>
+        <location filename="../ui/settings_dialog.cpp" line="310"/>
         <source>Start hidden in the system tray</source>
         <translation>Iniciar oculto en la bandeja del sistema</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="251"/>
+        <location filename="../ui/settings_dialog.cpp" line="314"/>
         <source>Left-clicking the tray icon shows/hides the window</source>
         <translation>Hacer clic en el icono de la bandeja muestra u oculta la ventana</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="255"/>
+        <location filename="../ui/settings_dialog.cpp" line="318"/>
         <source>Start Whatsie automatically when I log in</source>
         <translation>Iniciar Whatsie automáticamente al iniciar sesión</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="260"/>
+        <location filename="../ui/settings_dialog.cpp" line="323"/>
         <source>No system tray was detected: the window will never be hidden.</source>
         <translation>No se detectó ninguna bandeja del sistema: la ventana nunca se ocultará.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="272"/>
+        <location filename="../ui/settings_dialog.cpp" line="335"/>
         <source>System tray</source>
         <translation>Bandeja del sistema</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="274"/>
+        <location filename="../ui/settings_dialog.cpp" line="337"/>
         <source>Use a monochrome (symbolic) icon</source>
         <translation>Usar un icono monocromo (simbólico)</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="278"/>
+        <location filename="../ui/settings_dialog.cpp" line="341"/>
         <source>Hide the tray icon</source>
         <translation>Ocultar el icono de la bandeja</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="281"/>
+        <location filename="../ui/settings_dialog.cpp" line="344"/>
         <source>Dim the icon while disconnected</source>
         <translation>Atenuar el icono mientras está desconectado</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="287"/>
+        <location filename="../ui/settings_dialog.cpp" line="350"/>
         <source>Downloads</source>
         <translation>Descargas</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="291"/>
+        <location filename="../ui/settings_dialog.cpp" line="354"/>
         <source>Change…</source>
         <translation>Cambiar…</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="294"/>
+        <location filename="../ui/settings_dialog.cpp" line="357"/>
         <source>Download folder</source>
         <translation>Carpeta de descargas</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="303"/>
+        <location filename="../ui/settings_dialog.cpp" line="366"/>
         <source>Save files to:</source>
         <translation>Guardar archivos en:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="304"/>
+        <location filename="../ui/settings_dialog.cpp" line="367"/>
         <source>Always ask where to save</source>
         <translation>Preguntar siempre dónde guardar</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="308"/>
+        <location filename="../ui/settings_dialog.cpp" line="371"/>
         <source>Show the Downloads window when a download starts</source>
         <translation>Mostrar la ventana de Descargas al iniciar una descarga</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="323"/>
+        <location filename="../ui/settings_dialog.cpp" line="386"/>
         <source>Follow system</source>
         <translation>Seguir el sistema</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="324"/>
-        <location filename="../ui/settings_dialog.cpp" line="367"/>
+        <location filename="../ui/settings_dialog.cpp" line="387"/>
+        <location filename="../ui/settings_dialog.cpp" line="430"/>
         <source>Light</source>
         <translation>Claro</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="325"/>
+        <location filename="../ui/settings_dialog.cpp" line="388"/>
         <source>Dark</source>
         <translation>Oscuro</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="328"/>
+        <location filename="../ui/settings_dialog.cpp" line="391"/>
         <source>Theme:</source>
         <translation>Tema:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="341"/>
+        <location filename="../ui/settings_dialog.cpp" line="404"/>
         <source>Zoom (normal window):</source>
         <translation>Zoom (ventana normal):</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="348"/>
+        <location filename="../ui/settings_dialog.cpp" line="411"/>
         <source>Zoom (maximized / full screen):</source>
         <translation>Zoom (maximizada / pantalla completa):</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="350"/>
+        <location filename="../ui/settings_dialog.cpp" line="413"/>
         <source>Smooth scrolling</source>
         <translation>Desplazamiento suave</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="360"/>
+        <location filename="../ui/settings_dialog.cpp" line="423"/>
         <source>Scales the whole interface. Applies after restarting Whatsie.</source>
         <translation>Escala toda la interfaz. Se aplica tras reiniciar Whatsie.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="363"/>
+        <location filename="../ui/settings_dialog.cpp" line="426"/>
         <source>Interface scale:</source>
         <translation>Escala de la interfaz:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="366"/>
-        <location filename="../ui/settings_dialog.cpp" line="554"/>
+        <location filename="../ui/settings_dialog.cpp" line="429"/>
+        <location filename="../ui/settings_dialog.cpp" line="617"/>
         <source>Off</source>
         <translation>Desactivado</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="368"/>
+        <location filename="../ui/settings_dialog.cpp" line="431"/>
         <source>Medium</source>
         <translation>Medio</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="369"/>
+        <location filename="../ui/settings_dialog.cpp" line="432"/>
         <source>Strong</source>
         <translation>Fuerte</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="374"/>
+        <location filename="../ui/settings_dialog.cpp" line="437"/>
         <source>Blur messages until hover:</source>
         <translation>Difuminar mensajes hasta pasar el ratón:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="383"/>
+        <location filename="../ui/settings_dialog.cpp" line="446"/>
         <source>Show message notifications</source>
         <translation>Mostrar notificaciones de mensajes</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="388"/>
+        <location filename="../ui/settings_dialog.cpp" line="451"/>
         <source>Play the desktop&apos;s message sound</source>
         <translation>Reproducir el sonido de mensaje del escritorio</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="395"/>
+        <location filename="../ui/settings_dialog.cpp" line="458"/>
         <source>Desktop default</source>
         <translation>Predeterminado del escritorio</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="396"/>
+        <location filename="../ui/settings_dialog.cpp" line="459"/>
         <source> s</source>
         <translation> s</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="399"/>
+        <location filename="../ui/settings_dialog.cpp" line="462"/>
         <source>Hide after:</source>
         <translation>Ocultar tras:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="401"/>
+        <location filename="../ui/settings_dialog.cpp" line="464"/>
         <source>Send test notification</source>
         <translation>Enviar notificación de prueba</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="405"/>
+        <location filename="../ui/settings_dialog.cpp" line="468"/>
         <source>Temporary Do-not-disturb is in the tray icon menu.</source>
         <translation>El modo No molestar temporal está en el menú del icono de la bandeja.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="420"/>
+        <location filename="../ui/settings_dialog.cpp" line="483"/>
         <source>What WhatsApp may use</source>
         <translation>Qué puede usar WhatsApp</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="422"/>
+        <location filename="../ui/settings_dialog.cpp" line="485"/>
         <source>Camera and microphone are on by default so calls work without a prompt. Turn anything off here.</source>
         <translation>La cámara y el micrófono están activados de forma predeterminada para que las llamadas funcionen sin preguntar. Desactiva lo que quieras aquí.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="441"/>
+        <location filename="../ui/settings_dialog.cpp" line="504"/>
         <source>Storage</source>
         <translation>Almacenamiento</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="443"/>
-        <location filename="../ui/settings_dialog.cpp" line="444"/>
+        <location filename="../ui/settings_dialog.cpp" line="506"/>
+        <location filename="../ui/settings_dialog.cpp" line="507"/>
         <source>calculating…</source>
         <translation>calculando…</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="445"/>
+        <location filename="../ui/settings_dialog.cpp" line="508"/>
         <source>Cache:</source>
         <translation>Caché:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="446"/>
+        <location filename="../ui/settings_dialog.cpp" line="509"/>
         <source>Session data:</source>
         <translation>Datos de sesión:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="447"/>
+        <location filename="../ui/settings_dialog.cpp" line="510"/>
         <source>Clear cache</source>
         <translation>Borrar caché</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="448"/>
+        <location filename="../ui/settings_dialog.cpp" line="511"/>
         <source>Removes cached web content. You stay logged in.</source>
         <translation>Elimina el contenido web en caché. Tu sesión se mantiene.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="453"/>
+        <location filename="../ui/settings_dialog.cpp" line="516"/>
         <source>Log out &amp;&amp; clear session…</source>
         <translation>Cerrar sesión y borrar datos…</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="455"/>
+        <location filename="../ui/settings_dialog.cpp" line="518"/>
         <source>Removes the WhatsApp session. Whatsie quits and you link your phone again.</source>
         <translation>Elimina la sesión de WhatsApp. Whatsie se cierra y vuelves a vincular tu teléfono.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="464"/>
+        <location filename="../ui/settings_dialog.cpp" line="527"/>
         <source>Spell check</source>
         <translation>Corrección ortográfica</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="466"/>
+        <location filename="../ui/settings_dialog.cpp" line="529"/>
         <source>Check spelling as I type</source>
         <translation>Comprobar la ortografía mientras escribo</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="478"/>
+        <location filename="../ui/settings_dialog.cpp" line="541"/>
         <source>No dictionaries are bundled, so spell check is inactive.</source>
         <translation>No se incluye ningún diccionario, por lo que la corrección ortográfica está inactiva.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="485"/>
+        <location filename="../ui/settings_dialog.cpp" line="548"/>
         <source>Languages (check every one to spell-check against):</source>
         <translation>Idiomas (marca todos con los que quieras corregir):</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="500"/>
+        <location filename="../ui/settings_dialog.cpp" line="563"/>
         <source>%1 (%2) — %3</source>
         <translation>%1 (%2) — %3</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="528"/>
+        <location filename="../ui/settings_dialog.cpp" line="591"/>
         <source>Missing a language? Drop its .bdic dictionary file into the dictionaries folder, then reopen this dialog.</source>
         <translation>¿Falta un idioma? Coloca su archivo de diccionario .bdic en la carpeta de diccionarios y vuelve a abrir este diálogo.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="533"/>
+        <location filename="../ui/settings_dialog.cpp" line="596"/>
         <source>Open folder…</source>
         <translation>Abrir carpeta…</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="551"/>
-        <location filename="../ui/settings_dialog.cpp" line="563"/>
+        <location filename="../ui/settings_dialog.cpp" line="614"/>
+        <location filename="../ui/settings_dialog.cpp" line="626"/>
         <source>Automatic</source>
         <translation>Automático</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="552"/>
+        <location filename="../ui/settings_dialog.cpp" line="615"/>
         <source>Always on (ignore GPU blocklist)</source>
         <translation>Siempre activada (ignorar la lista de bloqueo de GPU)</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="559"/>
+        <location filename="../ui/settings_dialog.cpp" line="622"/>
         <source>Hardware acceleration:</source>
         <translation>Aceleración por hardware:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="564"/>
+        <location filename="../ui/settings_dialog.cpp" line="627"/>
         <source> MB</source>
         <translation> MB</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="565"/>
+        <location filename="../ui/settings_dialog.cpp" line="628"/>
         <source>Cap WhatsApp Web&apos;s JavaScript memory so a long session cannot grow without bound. 0 = automatic; lower it if the app uses too much RAM.</source>
         <translation>Limita la memoria JavaScript de WhatsApp Web para que una sesión larga no crezca sin límite. 0 = automático; redúcelo si la aplicación usa demasiada RAM.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="570"/>
+        <location filename="../ui/settings_dialog.cpp" line="633"/>
         <source>JavaScript memory limit:</source>
         <translation>Límite de memoria JavaScript:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="571"/>
+        <location filename="../ui/settings_dialog.cpp" line="634"/>
         <source>Route WebRTC through public interfaces only</source>
         <translation>Enrutar WebRTC solo por interfaces públicas</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="572"/>
+        <location filename="../ui/settings_dialog.cpp" line="635"/>
         <source>Hides local network addresses from calls. May break calls on some networks. Takes effect after a reload.</source>
         <translation>Oculta las direcciones de red local en las llamadas. Puede impedir las llamadas en algunas redes. Se aplica tras recargar.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="587"/>
+        <location filename="../ui/settings_dialog.cpp" line="650"/>
         <source>Takes effect after restarting Whatsie. Turn off if the window stays blank.</source>
         <translation>Se aplica tras reiniciar Whatsie. Desactívalo si la ventana se queda en blanco.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="594"/>
+        <location filename="../ui/settings_dialog.cpp" line="657"/>
         <source>Log file: %1</source>
         <translation>Archivo de registro: %1</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="594"/>
+        <location filename="../ui/settings_dialog.cpp" line="657"/>
         <source>disabled (--no-log-file)</source>
         <translation>desactivado (--no-log-file)</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="598"/>
+        <location filename="../ui/settings_dialog.cpp" line="661"/>
         <source>Open log folder</source>
         <translation>Abrir carpeta del registro</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="610"/>
+        <location filename="../ui/settings_dialog.cpp" line="673"/>
         <source>Screen lock</source>
         <translation>Bloqueo de pantalla</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="626"/>
+        <location filename="../ui/settings_dialog.cpp" line="689"/>
         <source>Remove…</source>
         <translation>Quitar…</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="630"/>
-        <location filename="../ui/settings_dialog.cpp" line="636"/>
+        <location filename="../ui/settings_dialog.cpp" line="693"/>
+        <location filename="../ui/settings_dialog.cpp" line="699"/>
         <source>Remove passcode</source>
         <translation>Quitar código</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="630"/>
+        <location filename="../ui/settings_dialog.cpp" line="693"/>
         <source>Enter the current passcode:</source>
         <translation>Introduce el código actual:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="636"/>
+        <location filename="../ui/settings_dialog.cpp" line="699"/>
         <source>That passcode is incorrect.</source>
         <translation>Ese código es incorrecto.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="648"/>
+        <location filename="../ui/settings_dialog.cpp" line="711"/>
         <source>Lock on startup</source>
         <translation>Bloquear al iniciar</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="651"/>
+        <location filename="../ui/settings_dialog.cpp" line="714"/>
         <source>Lock when minimized to the tray</source>
         <translation>Bloquear al minimizar a la bandeja</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="656"/>
+        <location filename="../ui/settings_dialog.cpp" line="719"/>
         <source>Never</source>
         <translation>Nunca</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="657"/>
+        <location filename="../ui/settings_dialog.cpp" line="720"/>
         <source> min</source>
         <translation> min</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="659"/>
+        <location filename="../ui/settings_dialog.cpp" line="722"/>
         <source>Lock after idle:</source>
         <translation>Bloquear tras inactividad:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="660"/>
+        <location filename="../ui/settings_dialog.cpp" line="723"/>
         <source>Show other Ktechpit apps on the lock screen</source>
         <translation>Mostrar otras aplicaciones de Ktechpit en la pantalla de bloqueo</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="672"/>
+        <location filename="../ui/settings_dialog.cpp" line="735"/>
         <source>A passcode is set. The app can be locked below.</source>
         <translation>Hay un código establecido. La aplicación se puede bloquear abajo.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="673"/>
+        <location filename="../ui/settings_dialog.cpp" line="736"/>
         <source>No passcode set. Set one to enable locking.</source>
         <translation>No hay código establecido. Establece uno para activar el bloqueo.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="674"/>
+        <location filename="../ui/settings_dialog.cpp" line="737"/>
         <source>Change passcode…</source>
         <translation>Cambiar código…</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="674"/>
+        <location filename="../ui/settings_dialog.cpp" line="737"/>
         <source>Set passcode…</source>
         <translation>Establecer código…</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="683"/>
+        <location filename="../ui/settings_dialog.cpp" line="746"/>
         <source>Network proxy</source>
         <translation>Proxy de red</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="688"/>
+        <location filename="../ui/settings_dialog.cpp" line="751"/>
         <source>Use system settings</source>
         <translation>Usar la configuración del sistema</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="689"/>
+        <location filename="../ui/settings_dialog.cpp" line="752"/>
         <source>No proxy (direct)</source>
         <translation>Sin proxy (directo)</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="690"/>
+        <location filename="../ui/settings_dialog.cpp" line="753"/>
         <source>Manual</source>
         <translation>Manual</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="695"/>
+        <location filename="../ui/settings_dialog.cpp" line="758"/>
         <source>Proxy:</source>
         <translation>Proxy:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="698"/>
+        <location filename="../ui/settings_dialog.cpp" line="761"/>
         <source>HTTP</source>
         <translation>HTTP</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="699"/>
+        <location filename="../ui/settings_dialog.cpp" line="762"/>
         <source>SOCKS5</source>
         <translation>SOCKS5</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="703"/>
+        <location filename="../ui/settings_dialog.cpp" line="766"/>
         <source>Type:</source>
         <translation>Tipo:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="707"/>
+        <location filename="../ui/settings_dialog.cpp" line="770"/>
         <source>host or IP</source>
         <translation>host o IP</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="714"/>
+        <location filename="../ui/settings_dialog.cpp" line="777"/>
         <source>Port:</source>
         <translation>Puerto:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="716"/>
+        <location filename="../ui/settings_dialog.cpp" line="779"/>
         <source>Server:</source>
         <translation>Servidor:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="719"/>
+        <location filename="../ui/settings_dialog.cpp" line="782"/>
         <source>optional</source>
         <translation>opcional</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="722"/>
+        <location filename="../ui/settings_dialog.cpp" line="785"/>
         <source>Username:</source>
         <translation>Usuario:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="726"/>
+        <location filename="../ui/settings_dialog.cpp" line="789"/>
         <source>kept for this session only</source>
         <translation>solo para esta sesión</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="729"/>
+        <location filename="../ui/settings_dialog.cpp" line="792"/>
         <source>Password:</source>
         <translation>Contraseña:</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="732"/>
+        <location filename="../ui/settings_dialog.cpp" line="795"/>
         <source>Reload WhatsApp (F5) for proxy changes to take effect. The password is never saved to disk.</source>
         <translation>Recarga WhatsApp (F5) para que los cambios del proxy surtan efecto. La contraseña nunca se guarda en el disco.</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="577"/>
+        <location filename="../ui/settings_dialog.cpp" line="640"/>
         <source>Render at the display&apos;s refresh rate</source>
         <translation>Renderizar a la frecuencia de actualización de la pantalla</translation>
     </message>
     <message>
-        <location filename="../ui/settings_dialog.cpp" line="578"/>
+        <location filename="../ui/settings_dialog.cpp" line="641"/>
         <source>Removes Chromium&apos;s 60 FPS cap so scrolling and animations run at your monitor&apos;s refresh rate. Uses more GPU and CPU. Takes effect after restarting Whatsie.</source>
         <translation>Elimina el límite de 60 FPS de Chromium para que el desplazamiento y las animaciones se ejecuten a la frecuencia de actualización de tu monitor. Usa más GPU y CPU. Se aplica tras reiniciar Whatsie.</translation>
     </message>

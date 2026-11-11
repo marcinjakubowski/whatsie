@@ -39,6 +39,7 @@ private:
     void configureStorage();
     void configureUserAgent();
     void configureAttributes();
+    void configureAcceptLanguage();
     void installBootstrap();
     void configureSpellCheck();
     static QString themeName(core::Theme theme);

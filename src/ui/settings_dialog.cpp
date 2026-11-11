@@ -6,6 +6,7 @@
 #include "core/settings/settings.h"
 #include "core/spellcheck.h"
 #include "core/storage_policy.h"
+#include "core/web_language.h"
 #include "core/zoom_policy.h"
 #include "platform/file_manager.h"
 #include "ui/passcode_dialog.h"
@@ -234,6 +235,68 @@ QWidget* SettingsDialog::buildGeneralTab()
     langNote->setStyleSheet(u"color: palette(placeholder-text);"_s);
     langForm->addRow(QString(), langNote);
     outer->addWidget(langBox);
+
+    auto* webLangBox = new QGroupBox(tr("WhatsApp Web language"), page);
+    auto* webLangLayout = new QVBoxLayout(webLangBox);
+
+    auto* webLangDesc = new QLabel(
+        tr("Choose the language header sent to WhatsApp Web (determines chat and menu language):"),
+        webLangBox);
+    webLangDesc->setWordWrap(true);
+    webLangLayout->addWidget(webLangDesc);
+
+    m_webLanguageSearch = new QLineEdit(webLangBox);
+    m_webLanguageSearch->setPlaceholderText(tr("Search languages…"));
+    m_webLanguageSearch->setClearButtonEnabled(true);
+    webLangLayout->addWidget(m_webLanguageSearch);
+
+    m_webLanguages = new QListWidget(webLangBox);
+    m_webLanguages->setSelectionMode(QAbstractItemView::SingleSelection);
+    m_webLanguages->setMaximumHeight(200);
+
+    const auto available = core::availableWebLanguages();
+    for (const auto& entry : available) {
+        auto* item = new QListWidgetItem(entry.displayName, m_webLanguages);
+        item->setData(Qt::UserRole, entry.code);
+        item->setData(Qt::UserRole + 1, entry.searchKey);
+    }
+
+    connect(m_webLanguageSearch, &QLineEdit::textChanged, this, [this](const QString& text) {
+        const QString query = text.trimmed().toLower();
+        for (int i = 0; i < m_webLanguages->count(); ++i) {
+            auto* item = m_webLanguages->item(i);
+            if (query.isEmpty()) {
+                item->setHidden(false);
+            } else {
+                const QString key = item->data(Qt::UserRole + 1).toString();
+                const QString code = item->data(Qt::UserRole).toString().toLower();
+                const bool match = key.contains(query) || code.contains(query) ||
+                                   item->text().contains(query, Qt::CaseInsensitive);
+                item->setHidden(!match);
+            }
+        }
+    });
+
+    connect(m_webLanguages, &QListWidget::currentItemChanged, this,
+            [this](QListWidgetItem* current, QListWidgetItem*) {
+                if (current != nullptr) {
+                    m_settings.setWebLanguage(current->data(Qt::UserRole).toString());
+                }
+            });
+
+    webLangLayout->addWidget(m_webLanguages);
+
+    auto* reloadRow = new QHBoxLayout;
+    auto* webLangNote = new QLabel(tr("Takes effect after reloading WhatsApp Web."), webLangBox);
+    webLangNote->setWordWrap(true);
+    webLangNote->setStyleSheet(u"color: palette(placeholder-text);"_s);
+    auto* reloadBtn = new QPushButton(tr("Reload page now"), webLangBox);
+    connect(reloadBtn, &QPushButton::clicked, this, &SettingsDialog::reloadWebRequested);
+    reloadRow->addWidget(webLangNote, 1);
+    reloadRow->addWidget(reloadBtn);
+    webLangLayout->addLayout(reloadRow);
+
+    outer->addWidget(webLangBox);
 
     auto* windowBox = new QGroupBox(tr("Window"), page);
     auto* form = new QFormLayout(windowBox);
@@ -814,6 +877,25 @@ void SettingsDialog::loadValues()
         const QSignalBlocker blocker(m_interfaceLanguage);
         const int i = m_interfaceLanguage->findData(m_settings.interfaceLanguage());
         m_interfaceLanguage->setCurrentIndex(i < 0 ? 0 : i);
+    }
+    if (m_webLanguages != nullptr) {
+        const QSignalBlocker blocker(m_webLanguages);
+        const QString current = m_settings.webLanguage();
+        bool found = false;
+        for (int i = 0; i < m_webLanguages->count(); ++i) {
+            if (m_webLanguages->item(i)->data(Qt::UserRole).toString() == current) {
+                m_webLanguages->setCurrentRow(i);
+                m_webLanguages->scrollToItem(m_webLanguages->item(i));
+                found = true;
+                break;
+            }
+        }
+        if (!found && m_webLanguages->count() > 0) {
+            m_webLanguages->setCurrentRow(0); // Auto-detect
+        }
+    }
+    if (m_webLanguageSearch != nullptr) {
+        m_webLanguageSearch->clear();
     }
     m_spellCheck->setChecked(m_settings.spellCheckEnabled());
     applySpellLanguageChecks();

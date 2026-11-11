@@ -31,6 +31,30 @@
         }
     };
     window.__whatsie = api;
+    if (api.config && api.config.webLanguage) {
+        try {
+            var rawLang = api.config.webLanguage; // e.g. "pl_PL" or "pl-PL"
+            var code = rawLang.replace('-', '_');
+            var primary = code.split('_')[0].toLowerCase();
+            document.cookie = 'wa_web_lang_pref=' + code + '; domain=.whatsapp.com; path=/; max-age=31536000; secure';
+            document.cookie = 'wa_lang_pref=' + primary + '; domain=.whatsapp.com; path=/; max-age=31536000; secure';
+            var lang = api.config.webLanguage.replace('_', '-');
+            var languages = api.config.webLanguages || [lang];
+            Object.defineProperty(navigator, 'language', {
+                get: function () { return lang; },
+                configurable: true
+            });
+            Object.defineProperty(navigator, 'languages', {
+                get: function () { return languages; },
+                configurable: true
+            });
+        } catch (_) {}
+    } else if (api.config && api.config.webLanguage === '') {
+        try {
+            document.cookie = 'wa_web_lang_pref=; domain=.whatsapp.com; path=/; max-age=0; secure';
+            document.cookie = 'wa_lang_pref=; domain=.whatsapp.com; path=/; max-age=0; secure';
+        } catch (_) {}
+    }
     try {
         if (typeof QWebChannel === 'function' && window.qt && window.qt.webChannelTransport) {
             new QWebChannel(window.qt.webChannelTransport, function (channel) {

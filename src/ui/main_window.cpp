@@ -452,6 +452,8 @@ void MainWindow::showSettings()
         connect(m_settingsDialog, &SettingsDialog::clearCacheRequested, this, &MainWindow::clearCache);
         connect(m_settingsDialog, &SettingsDialog::clearSessionRequested, this,
                 &MainWindow::confirmClearSession);
+        connect(m_settingsDialog, &SettingsDialog::reloadWebRequested, this,
+                [this] { m_webView->reload(); });
     }
     m_settingsDialog->show();
     m_settingsDialog->raise();

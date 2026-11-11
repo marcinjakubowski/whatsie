@@ -153,13 +153,16 @@ private Q_SLOTS:
         // back — so the choice reset to the default on the next launch.
         const QString path = m_settings->fileName();
         m_settings->setInterfaceLanguage(u"fr"_s);
+        m_settings->setWebLanguage(u"pl_PL"_s);
         m_settings->setAutostart(true);
         QCOMPARE(m_settings->interfaceLanguage(), u"fr"_s);
+        QCOMPARE(m_settings->webLanguage(), u"pl_PL"_s);
         QCOMPARE(m_settings->autostart(), true);
         m_settings.reset(); // destroy -> sync
 
         Settings reloaded(path);
         QCOMPARE(reloaded.interfaceLanguage(), u"fr"_s);
+        QCOMPARE(reloaded.webLanguage(), u"pl_PL"_s);
         QCOMPARE(reloaded.autostart(), true);
 
         // The values must land in a clean group, never the reserved [%General].

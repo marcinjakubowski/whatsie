@@ -42,6 +42,8 @@ qt_add_library(whatsie_core STATIC
     theme/theme_service.h
     unread_badge.cpp
     unread_badge.h
+    web_language.cpp
+    web_language.h
     zoom_policy.cpp
     zoom_policy.h
 )

@@ -48,6 +48,7 @@ Q_SIGNALS:
     void testNotificationRequested();
     void clearCacheRequested();
     void clearSessionRequested();
+    void reloadWebRequested();
 
 private:
     void setupUi();
@@ -74,6 +75,8 @@ private:
 
     QTabWidget* m_tabs = nullptr;
     QComboBox* m_interfaceLanguage = nullptr;
+    QLineEdit* m_webLanguageSearch = nullptr;
+    QListWidget* m_webLanguages = nullptr;
     QComboBox* m_closeAction = nullptr;
     QCheckBox* m_startMinimized = nullptr;
     QCheckBox* m_trayLeftClick = nullptr;

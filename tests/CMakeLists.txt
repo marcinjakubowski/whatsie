@@ -49,6 +49,7 @@ whatsie_add_test(tst_connection_watchdog tst_connection_watchdog.cpp whatsie_cor
 whatsie_add_test(tst_graphics_fallback   tst_graphics_fallback.cpp   whatsie_core)
 whatsie_add_test(tst_gpu_storm_detector  tst_gpu_storm_detector.cpp  whatsie_core)
 whatsie_add_test(tst_app_lock            tst_app_lock.cpp            whatsie_core)
+whatsie_add_test(tst_web_language        tst_web_language.cpp        whatsie_core)
 whatsie_add_test(tst_spellcheck          tst_spellcheck.cpp          whatsie_core GUI)
 whatsie_add_test(tst_log_sink            tst_log_sink.cpp            whatsie_core)
 whatsie_add_test(tst_theme_service       tst_theme_service.cpp       whatsie_core GUI)

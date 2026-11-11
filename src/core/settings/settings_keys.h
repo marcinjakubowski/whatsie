@@ -54,6 +54,7 @@ inline constexpr QLatin1StringView kLastOpenDirectory{"files/lastOpenDirectory"}
 // out of a "general" group on purpose: QSettings reserves the INI "General"
 // section, so a general/ key serialises to a malformed, unreadable [%General].
 inline constexpr QLatin1StringView kInterfaceLanguage{"app/interfaceLanguage"};
+inline constexpr QLatin1StringView kWebLanguage{"app/webLanguage"};
 
 // spellcheck/
 inline constexpr QLatin1StringView kSpellCheckEnabled{"spellcheck/enabled"};
